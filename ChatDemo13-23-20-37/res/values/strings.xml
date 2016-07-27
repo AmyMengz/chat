@@ -1,0 +1,256 @@
+<resources>
+
+    <string name="app_name">ChatDemo</string>
+    <string name="splash_vision">版本号 </string>
+    <string name="splash_vision_first">1.0.1 </string>
+    <string name="Version_number_is_wrong">Version number is wrong</string>
+    <string name="session">聊天</string>
+    <string name="nearby">附近</string>
+    <string name="satrt_date">发起约会</string>
+    <string name="contacts">联系人</string>
+    <string name="setting">设置</string>
+    <string name="date_invite">约起来</string>
+    <string name="nearby_users">附近的人</string>
+
+    <string name="starting_date">正在发起</string>
+    
+    <string name="selection">筛选</string>
+    <string name="ok">确定</string>
+    <string name="date_detail">详情</string>
+    <string name="edit_my_date">编辑约会</string>
+   <!--  <string name="edit_my_date_tip">编辑个人约会</string> -->
+    <string name="edit_my_date_note_tip">编辑约会说明</string>
+    <string name="save">保存</string>
+    <string name="no_date_notes">这家伙很懒，还没有留下约会说明！</string>
+    <string name="chagne_note_ok">修改成功</string>
+    <string name="chagne_note_too_long">新的约会说明太长了哦，150字以内哦~</string>
+    
+    
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="refreshint">正在刷新</string>
+    <string name="last_refresh_time">上次更新</string>
+    
+    
+    <string name="no_signature">这家伙很懒，还没设置签名哦！</string>
+    <string name="date_times">约会:%d</string>
+    <string name="fans">粉丝:%d</string>
+    <string name="attention">关注:%d</string>
+    <string name="date_notes">说明：</string>
+    <string name="phone_number">电话：</string>
+    <string name="verify_tips">通过审核后可以看到他的号码！</string>
+    <string name="u_own_date">这是你自己发布的约会哦！</string>
+    <string name="verify_num">%d 人通过审核  </string>
+    <string name="apply_num"> | %d 人报名</string>
+    <string name="verify_ok_tips">审核通过的小伙伴：</string>
+    
+    <string name="apply_manage">管理报名 </string>
+    <string name="i_want_apply">预约报名 </string>
+    <string name="cancel_apply">撤销报名 </string>
+    <string name="comments">评论</string>
+    <string name="share">分享</string>
+    <string name="report">举报</string>
+    
+    <string name="edit_date_tips">编辑约会</string>
+    <string name="delete_date">删除约会</string>
+    <string name="edit_date_notes">编辑约会说明</string>
+    <string name="cancel">取消</string>
+    
+    <string name="sure_cancel_date">确定删除约会？</string>
+    
+    <string name="date_title">主题</string>
+    <string name="date_title_hint">请输入约会主题</string>
+    <string name="date_partner_num">人数</string>
+    <string name="date_partner_num_hint">最大约会人数(1~9)</string>
+    <string name="date_partner_type">约会对象</string>
+    <string name="date_partner_type_man">限男生</string>
+    <string name="date_partner_type_women">限女生</string>
+    <string name="date_partner_type_nogender">男女不限</string>
+    <string name="date_fees_type">费用规则</string>
+    <string name="date_fees_type_i">我买单</string>
+    <string name="date_fees_type_man_a">男A女免</string>
+    <string name="date_fees_type_aa">AA</string>
+    <string name="date_fees_type_u">我请客你出钱</string>
+    <string name="date_time_tip">时间：</string>
+    <string name="date_time_tip_hint">请选择约会时间</string>
+    <string name="date_address_tip">地点：</string>
+    <string name="date_address_tip_hint">请选择约会地点</string>
+    <string name="date_note_tip">说明：</string>
+    <string name="date_note_tip_hint">请输入约会简要说明</string>
+    <string name="date_release_tip">发布约会</string>
+    
+    
+    
+    <string name="date_address">约会地点</string>
+    <string name="ktv">KTV</string>
+    <string name="bar">酒吧</string>
+    <string name="others">其他</string>
+    <string name="discount_only">只看有优惠的商家</string>
+    <string name="nearby_ktv">附近的KTV</string>
+    <string name="nearby_bar">附近的酒吧</string>
+    <string name="nearby_other">附近的其他娱乐</string>
+    <string name="city">城市</string>
+    <string name="chose_city">选择一个城市</string>
+    <string name="release_error_tip">发布约会失败！</string>
+    <string name="release_ok_tip">发布约会成功！</string>
+    
+    <string name="average_price">￥%s/人</string>
+    <string name="distance">%sm</string>
+    <string name="deals_num">%d 条优惠信息</string>
+    <string name="btn_go">去这家</string>
+    
+    <!-- 筛选 -->
+    <string name="selection_gender">性别限制</string>
+    <string name="selection_gender_no">不限</string>
+    <string name="selection_gender_women">女生可以参加</string>
+    <string name="selection_gender_men">男生可以参加</string>
+    
+	<string name="selection_fees">费用规则</string>
+    <string name="selection_fees_all">全部</string>
+    <string name="selection_fees_sponsor">发起人买单</string>
+    <string name="selection_fees_men_a">男A女免</string>
+    <string name="selection_fees_aa">AA</string>
+    <string name="selection_fees_partner">参加者买单</string>
+    
+
+    
+    <string name="selection_date_time">约会时间</string>
+    <string name="selection_date_all">全部</string>
+    <string name="selection_date_today">今天</string>
+    <string name="selection_date_tomorrow">明天</string> 
+    <string name="selection_date_week">一周以内</string> 
+    
+    <string name="selection_user_gender">性别选择</string>
+    <string name="selection_user_gender_no">全部</string>
+    <string name="selection_user_gender_women">只看女生</string>
+    <string name="selection_user_gender_men">只看男生</string>
+    
+    <string name="selection_user_active">活跃度限制</string>
+    <string name="selection_user_active_no">不限</string>
+    <string name="selection_user_active_one">1天以内登陆过</string>
+    <string name="selection_user_active_three">3天以内登陆过</string>
+    <string name="selection_user_active_seven">7天以内登陆过</string>
+    
+    
+    <!--  -->
+    <string name="get_nearby_error">获取附近的人失败！</string>
+    <string name="no_more_nearby">没有更多信息！</string>
+    <string name="get_nearby_date_error">获取附近的约会失败！</string>
+    
+    <string name="recent_just_now">刚刚</string>
+    <string name="recent_two_hour">2小时前</string>
+    <string name="recent_four_hour">4小时前</string>
+    <string name="recent_twelve_hour">1天前</string>
+    <string name="recent_three_day">3天前</string>
+    <!-- <string name="recent_seven_day">7天内</string> -->
+    <string name="recent_seven_day_out">7天前</string>
+    <string name="distance_mail">%s公里</string>
+    
+    
+    <string name="limit_partner_num">限%d人</string>
+    
+    
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="the_day_after_tomorrow">后天</string>
+    
+    <string name="sure_apply_date">确定要报名今天的约会？\n\n被批准后不能撤销报名哦</string>
+    <string name="apply_error_tip">报名失败 </string>
+    <string name="apply_ok">报名成功</string>
+    
+    <string name="sure_cancel_apply">确定撤销报名？</string>
+    <string name="cancel_apply_ok">撤销报名成功</string>
+    <string name="cancel_apply_error_tip">撤销报名失败 </string>
+    
+    <string name="delete_date_ok">删除约会成功</string>
+    <string name="delete_date_error">删除约会失败</string>
+    <string name="delete_date_can_not">约会已被申请不能删除</string>
+    <string name="edit_note_len">%d/150</string>
+    <string name="he_date_count">Ta正在发起的约会</string>
+    <string name="he_history_date_count">Ta的历史约会数量</string>
+    <string name="he_date_no">Ta还没有发起约会哦！</string>
+    
+    <string name="high">身高</string>
+    <string name="emotional">感情状况</string> 
+    <string name="secret">保密</string>
+    <string name="location">所在地</string>
+    <string name="job">职业</string>
+    <string name="income">月收入</string>   
+    <string name="get_user_error_tip">获取用户消息失败</string>
+    
+    <string name="no_apply">还没有人报名你的约会哦！</string>
+    <string name="allow">批准</string>
+    <string name="allowed">已批准</string>
+    <string name="phone">电话: </string>
+    <string name="allowed_to_phone">批准后可以看到TA的手机号码</string>
+    
+    <string name="manage_apply">约会报名管理</string>
+    <string name="get_data_error">获取数据失败</string>
+    <string name="allow_ta_">批准%s加入约会？\n\nTA加入约会后你们的号码会彼此公开</string>
+    <string name="allow_beyond_limit">已批准的人数已达到约会限制人数上限！</string>
+    <!-- <string name="allow">批准</string> -->
+    
+    <string name="add_attention">添加关注</string>
+    <string name="start_chat">聊天</string>
+    
+    <string name="date_title_need">请输入约会标题！ </string>
+    <string name="date_partner_num_need">请选择人数限制哦！ </string>
+    <string name="date_time_need">请选择约会时间！ </string>
+    <string name="date_address_need">请选择一个约会地点！ </string>
+    <string name="date_time_invalid">您选择的约会时间已经过了，请重新选择吧！ </string>
+    <string name="date_time_too_close">您选择的约会时间太紧了，最好超过两个小时哦！ </string>
+    <string name="date_time_too_far">您选择的约会时间最好在一个月以内哦！ </string>
+    <string name="date_count_limit">最多同时发起两个约会，请查看您已经发起的约会！ </string>
+    <string name="date_time_limit">您选择的约会时间两小时内存在约会哦，约会间隔时间必须为两小时以上！ </string>
+    <string name="change_notes_reeor">修改约会说明失败！</string>
+    <string name="your_gender_no">您的性别不符合约会要求哦！</string>
+    
+    
+    <string name="all">全部</string>
+    <string name="address">地址 :</string>
+    <string name="bussiness_info">商家详情</string>
+    
+    
+    <string name="Network_error">网络出错</string>
+    <string name="please_check">key 验证出错! 请在 AndroidManifest.xml 文件中检查 key 设置</string>
+    <string name="location_info">位置信息</string>
+    <string name="location_error">定位失败</string>
+    
+    <string name="bussiness_no_list_tip">没有符合要求的商铺！</string>
+    
+    
+
+      <!-- author_dyt -->
+    <string name="message_search_hint">搜索&#8230;</string>
+    <string name="username">请输入要查找的用户名</string>
+    <string name="search">搜索</string>
+    <string name="fds_fail">获取好友失败</string>
+    <string name="chat_fail">获取聊天信息失败</string>
+    <string name="re_get">点击重新获取</string>
+    <string name="getting_fds">正在获取好友列表...</string>
+    <string name="getting_chat">正在获取聊天信息...</string>
+    <string name="fds_no">您暂无好友信息!</string>
+    <string name="chat_no">您暂无聊天信息!</string>
+    <string name="connect_error">连接失败</string> 
+    <string name="apply_fds_fail">申请好友失败</string>
+    <string name="apply_fds">申请好友</string>
+    <string name="has_apply_fds">您已经向</string>
+    <string name="find_no">亲，没有找到哦！</string>
+    <string name="find_fail">查找失败</string>
+    <string name="send">发送</string>
+    <string name="re_send">重发</string>
+    <string name="send_fail">发送失败</string>
+    <string name="please_check_net">请检查您的网络</string>
+    <string name="new_fds">新朋友</string>
+    <string name="has_be_fds">已成为好朋友</string>
+    <string name="had_apply_fds">已经申请好友</string>
+    <string name="apply_to_be_fds">请求加为好友</string>
+    <string name="input_contact_name">请输入要查找的联系人</string>
+    <string name="no_need_apply">你们已经是好友了\n\n无需再次申请</string>
+    <string name="no_net">请检查您的网络</string>
+    <!-- author_dyt / -->
+    <string name="request">%s报名了你的约会，快去看看吧~</string>
+    <string name="un_request">%s撤销了对你的约会报名，快去看看吧~</string>
+    <!-- <string name="un_request">%s撤销了对你的约会报名，快去看看吧~</string> -->
+
+</resources>

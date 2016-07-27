@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_gap"
+        android:orientation="vertical"
+        >
+        <TextView 
+        android:id="@+id/text_len"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:text="@string/edit_note_len"
+        android:paddingRight="@dimen/margin_gap"
+        />
+    <EditText 
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="note"
+        android:gravity="top|left"
+        android:lines="10"
+        android:background="@drawable/seabar_input"
+        android:padding="@dimen/margin_gap"
+        android:layout_marginTop="@dimen/margin_gap"
+        />
+    </LinearLayout>
+    
+
+</LinearLayout>

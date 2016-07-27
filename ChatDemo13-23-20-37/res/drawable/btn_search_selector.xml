@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/sousuo_56abe4_100"  android:state_pressed="false"/>
+    <item android:drawable="@drawable/sousuo_11cd6e_100" android:state_pressed="true"/>
+<!--     <item android:drawable="@drawable/btn_login_n"  android:state_pressed="false"/>
+    <item android:drawable="@drawable/btn_login_p" android:state_pressed="true"/> -->
+
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:color="@color/common_botton_bar_blue"></item>  <!-- 点击后的字体颜色 -->
+    <item android:state_selected="true" android:color="@color/common_botton_bar_blue"></item> 
+  <item android:color="@color/black"></item>    <!-- 默认字体颜色 -->
+
+</selector>

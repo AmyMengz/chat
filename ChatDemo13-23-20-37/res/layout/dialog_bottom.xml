@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"  
+    android:layout_margin="@dimen/margin_gap_bigger"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/dialog">  
+  
+    <TextView  
+        android:gravity="center"
+        android:id="@+id/tv_dialog_title"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:background="@color/common_botton_bar_blue"  
+        android:padding="@dimen/margin_gap"  
+        android:textColor="@color/white_text"  
+        android:textSize="@dimen/text_size_little"  
+        android:textStyle="bold" 
+        android:text="@string/edit_date_tips" />  
+  
+    
+          <TextView 
+         android:gravity="center" 
+        android:id="@+id/dialog_delete_date"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_margin="@dimen/margin_gap"
+        android:text="@string/delete_date"  
+        android:textColor="@color/black"
+         /> 
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/grey" 
+             />
+          <TextView
+        android:gravity="center"  
+        android:id="@+id/dialog_edit_notes"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_margin="@dimen/margin_gap"  
+        android:text="@string/edit_date_notes"
+        android:textColor="@color/black"
+         /> 
+          <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/grey" 
+             />
+          <TextView  
+        android:gravity="center"
+        android:id="@+id/dialog_cancle"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_margin="@dimen/margin_gap"  
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+         /> 
+         
+</LinearLayout>

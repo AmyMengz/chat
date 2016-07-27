@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huodong.im.chatdemo"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission> 
+    
+    <!--百度地图SDK需要的permission  -->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+
+
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.huodong.im.chatdemo" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 百度地图SDK需要的permission -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <!-- author_dyt  -->
+        <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- author_dyt / -->
+    <application
+        android:name="com.huodong.im.chatdemo.activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppStartLoadTranslucent" >
+        <activity
+            android:name="com.huodong.im.chatdemo.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huodong.im.chatdemo.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|adjustResize" >
+        </activity>
+
+        <service android:name="com.huodong.im.chatdemo.service.IMLocationService" >
+        </service>
+        <!-- 百度SDK -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="EQOxrf3hOUiGyWjYx3qyeiIB" /> <!-- http://lbsyun.baidu.com/apiconsole/key -->
+
+        <activity android:name="com.huodong.im.chatdemo.activity.LoginActivity" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.SelectionActivity" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.RegisterActivity1" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.RegisterActivity2" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.ResetPasswordActivity" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.RegisterActivity3" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.RegisterActivity4" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.DateDetailActivity" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.EditNoteActivity" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.SelectAddressActivity" >
+        </activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.SelectAddressActivityDetail" >
+        </activity>
+        <activity
+            android:name="com.huodong.im.chatdemo.activity.SelectCityActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" >
+        </activity>
+
+        <!-- author_dyt -->
+        <activity
+            android:name="com.huodong.im.chat.AddFriendActivity"
+            android:windowSoftInputMode="stateHidden|adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.huodong.im.chat.ChatActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity android:name="com.huodong.im.chat.NewFdsActivity" 
+            android:theme="@style/chat_stytle">
+        </activity>
+        <activity
+            android:name="com.huodong.im.chat.ApplyFdsActivity"
+            android:theme="@style/Theme.AppStartLoadTranslucent.TranslucentTheme" >
+        </activity>
+
+        <service android:name="com.huodong.im.chat.service.ChatService" >
+        </service>
+        <!-- 下面的receiver需要的权限  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+        <receiver android:name="com.huodong.im.chat.service.NetStateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library android:name="android.test.runner" />
+        <!-- author_dyt / -->
+        <activity android:name="com.huodong.im.chatdemo.activity.ManageApplyActivity"></activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.DetailNearbyActivity"></activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.HisDateActivity"></activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.BussinessDetailActivity"></activity>
+        <activity android:name="com.huodong.im.chatdemo.activity.BaiduMapActivity"></activity>
+    </application>
+
+</manifest>

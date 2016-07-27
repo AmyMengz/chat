@@ -1,0 +1,95 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="Theme.AppStartLoadTranslucent" parent="android:Theme.Holo.Light">  
+	    <item name="android:windowNoTitle">true</item>  
+	    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="bottom_bar_style">
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:textColor">@color/main_botton_text_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#ffff00</item>
+        
+    </style>
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/top_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+    </style>
+    <style name="ActionBarTitle">
+        <item name="android:textSize">@dimen/base_action_bar_title_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+    <style name="Register_Input">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/base_edit_input</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+        <item name="android:layout_marginTop">@dimen/register_margin</item>
+        
+    </style>
+    <style name="Animations_GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="bottom_dialog" parent="android:Theme.Light">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+        <!-- dyt -->
+    <style name="Theme.AppStartLoadTranslucent.TranslucentTheme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+        <style name="portrait_pic">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    
+        <style name="portrait_pic_chat">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    
+           <style name="chat_stytle" parent="android:Theme.Holo.Light">  
+	    <item name="android:windowNoTitle">true</item>  
+	    </style>
+    
+    <!-- dyt /-->
+
+</resources>

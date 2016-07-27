@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+   <!--  <GridView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/photos"
+        
+        ></GridView> -->
+        <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+         <LinearLayout 
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_bottom_bar"
+        android:background="@color/bottom_bar_normal_bg"
+        android:orientation="horizontal"
+        
+        >
+             <TextView 
+                 android:id="@+id/add_attention"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="match_parent"
+                 android:text="@string/add_attention"
+                 android:textColor="@color/white"
+                 android:gravity="center"
+                 android:background="@color/common_botton_bar_blue"
+                 />
+             <TextView 
+                 android:id="@+id/chat"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="match_parent"
+                 android:text="@string/start_chat"
+                 android:textColor="@color/white"
+                 android:gravity="center"/>
+         </LinearLayout>
+        <com.huodong.im.chatdemo.view.UserDefineScrollView 
+            android:layout_below="@id/common_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom"
+           	android:scrollbars="none"
+            >
+            <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_gap" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal" 
+                android:background="@drawable/corner_white_bg"
+                android:padding="@dimen/margin_gap">
+                <!-- <GridView 
+        			android:layout_width="match_parent"
+       				android:layout_height="wrap_content"
+        			android:id="@+id/photos"
+        			></GridView>  -->
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/nearby_date_avatar"
+                    android:layout_height="@dimen/nearby_date_avatar"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/default_face"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" 
+                android:gravity="center">
+                <TextView
+                     android:id="@+id/gender_age"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="right"
+                     android:paddingRight="@dimen/margin_gap"
+                     android:text="26"
+                     android:textColor="@color/white" 
+                     android:background="@drawable/gender_gril"/>
+
+                <TextView
+                    android:id="@+id/star"
+                    android:layout_marginLeft="@dimen/margin_gap"
+                    android:textColor="@color/color_text_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="摩羯" />
+                <TextView 
+                    android:id="@+id/fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fans:1"
+                    android:layout_marginLeft="@dimen/margin_gap"
+                    />
+                <TextView 
+                    android:id="@+id/attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="attention:1"
+                    android:layout_marginLeft="@dimen/margin_gap"
+                    />
+                
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_marginTop="@dimen/margin_gap_bigger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView 
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0公里"
+                    
+                    />
+                <TextView 
+                    android:id="@+id/recent_time"
+                    android:layout_marginLeft="@dimen/margin_gap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2天前"/>
+            </LinearLayout>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signature"
+                android:text="我就是我 不一样的烟火"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_gap"
+                />
+             <LinearLayout
+               android:layout_marginTop="@dimen/margin_gap_bigger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_white_bg"
+                android:orientation="vertical"
+                 >
+                <RelativeLayout 
+                    android:id="@+id/his_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/he_date_count"
+                        />
+                     <LinearLayout 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        >
+                         <TextView 
+                        android:id="@+id/date_count"
+                        android:textColor="@color/common_botton_bar_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        />
+                    <TextView 
+                        android:layout_toRightOf="@id/date_count"
+                        android:textColor="@color/common_botton_bar_blue"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" >"/>
+                     </LinearLayout> 
+                    
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" 
+                    android:layout_marginLeft="@dimen/margin_gap_bigger"
+                    android:layout_marginRight="@dimen/margin_gap_bigger"/>
+                <RelativeLayout 
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/he_history_date_count"
+                        />
+                    <TextView 
+                        android:id="@+id/history_date_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                </LinearLayout>
+
+               
+
+          <!--   <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_grey"
+                android:layout_marginTop="20dp"
+                android:text="详细资料" /> -->
+                
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/margin_gap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_white_bg"
+                android:orientation="vertical"
+                 >
+                <RelativeLayout 
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/high"
+                        />
+                    <TextView 
+                        android:id="@+id/hight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0cm"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" 
+                    android:layout_marginLeft="@dimen/margin_gap_bigger"
+                    android:layout_marginRight="@dimen/margin_gap_bigger"/> 
+
+                <RelativeLayout 
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/emotional"
+                        />
+                    <TextView 
+                        android:id="@+id/emotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secret"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey" 
+                    android:layout_marginLeft="@dimen/margin_gap_bigger"
+                    android:layout_marginRight="@dimen/margin_gap_bigger"/> 
+               <RelativeLayout 
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/location"
+                        />
+                    <TextView 
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secret"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey"  
+                    android:layout_marginLeft="@dimen/margin_gap_bigger"
+                    android:layout_marginRight="@dimen/margin_gap_bigger"/>
+                
+                <RelativeLayout 
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job"
+                        />
+                    <TextView 
+                        android:id="@+id/job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secret"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <View
+                   android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey"
+                    android:layout_marginLeft="@dimen/margin_gap_bigger"
+                    android:layout_marginRight="@dimen/margin_gap_bigger" />
+                <RelativeLayout 
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_gap_bigger"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income"
+                        />
+                    <TextView 
+                        android:id="@+id/income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secret"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+               
+            </LinearLayout>
+        </LinearLayout>
+        </com.huodong.im.chatdemo.view.UserDefineScrollView>
+   
+    
+
+</RelativeLayout>

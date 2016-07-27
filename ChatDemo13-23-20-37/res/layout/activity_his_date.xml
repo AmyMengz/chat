@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+             <!-- <ProgressBar
+        		android:id="@+id/processBar" 
+       			android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		style="?android:attr/progressBarStyleLarge"
+        		android:layout_gravity="center"
+       			android:layout_centerInParent="true" 
+        		android:layout_centerVertical="true"/> 
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/no_list"
+            android:gravity="center"
+            android:textColor="@color/color_text_grey"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_centerVertical="true"
+            android:text="@string/he_date_no"
+            android:visibility="gone"
+            
+            /> -->
+    </LinearLayout>
+     <com.huodong.im.chatdemo.view.UserDefineScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        > 
+         <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <ProgressBar
+        		android:id="@+id/processBar" 
+       			android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		style="?android:attr/progressBarStyleLarge"
+        		android:layout_gravity="center"
+       			android:layout_centerInParent="true" 
+        		android:layout_centerVertical="true"/> 
+        <TextView 
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/no_list"
+            android:gravity="center"
+            android:textColor="@color/color_text_grey"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_centerVertical="true"
+            android:text="@string/he_date_no"
+            android:visibility="gone"
+            
+            />
+         <ListView 
+             android:id="@+id/his_date_list"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:listSelector="@android:color/transparent"
+         	 android:cacheColorHint="@android:color/transparent"
+             ></ListView>
+         
+      
+    </RelativeLayout>
+    </com.huodong.im.chatdemo.view.UserDefineScrollView> 
+   
+    
+      
+   
+    
+    
+    
+
+</LinearLayout>
